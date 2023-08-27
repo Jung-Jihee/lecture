@@ -1,0 +1,22 @@
+1. 전체강의목록 
+http://localhost:8080/list
+2. 강의 저장
+http://localhost:8080/lecturesave
+{"lecturer":"이미아","classname":"CLASS-G","lecturedate":"2023-08-30","lecturehour":"10",
+"lectureminute":"30" ,"content":"파이썬 기조강의의"}
+
+3. 강연신청자 목록(강연별 신청한 사번 목록)
+http://localhost:8080/classreg?classNo=1
+
+4.Front 강연 신청(사번 입력, 같은 강연 중복 신청 제한)
+http://localhost:8080/front/lectureproc
+{"classNo":2, "sabun":"15412"}
+
+5. 신청내역 조회(사번 입력)
+http://localhost:8080/front/lectureView?classNo=2&sabun=12431
+
+6. 신청한 강연 취소
+http://localhost:8080/front/lectureDel?seq=1
+
+7. 실시간 인기 강연
+http://localhost:8080/front/favorite
